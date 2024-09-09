@@ -423,3 +423,111 @@ button {
     opacity: 1;
     height: 1.5px;
 }
+/* service */
+.service {
+    margin-top: 190px;
+    padding: 68px 0 100px;
+    background-color: #fff6ed;
+}
+.service__top {
+    text-align: center;
+}
+.service__desc {
+    margin-top: 15px;
+    color: #5e6085;
+    font-family: Sora sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.section__heading {
+    color: #000958;
+    text-align: center;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19; /* 119.231% */
+}
+.service__body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: 70px;
+    column-gap: 70px;
+}
+.service-item {
+    padding: 30px;
+    width: 294px;
+    background-color: #fff;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+}
+.service-item + .service-item {
+    margin-top: 24px;
+}
+.service-item__heading {
+    position: relative;
+    padding-left: 12px;
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.service-item__heading::before {
+    position: absolute;
+    inset: 0 auto 0 0;
+    content: "";
+    display: inline-block;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(#FF5B2E,#FFA187);
+}
+.service-item__desc {
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
+.service-item__more {
+    display: inline-block;
+    margin-top: 28px;
+    color: #34396a;
+    font-family: Sora;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+.service-item__more::after {
+    content: url(../img/arrow-up-right.svg);
+    margin: 2px 0 0 5px;
+}
+.service__img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.service__media {
+    position: relative;
+    margin-top: 18px;
+}
+.service__media::after {
+    content: "";
+    position: absolute;
+    height: 350px;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    border-radius: 10px;
+}
+.service__cta-wrap {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+.service__cta {
+    min-width: 214px;
+    color: #ff5b2e;
+    border-color: currentColor;
+}
